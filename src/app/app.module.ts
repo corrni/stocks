@@ -4,11 +4,18 @@ import { NgModule } from "@angular/core";
 import { AppComponent } from "./app.component";
 import { StocksService } from "./services/stocks.service";
 import { HttpClientModule } from "@angular/common/http";
+import { SummaryComponent } from './components/summary/summary.component';
 
 @NgModule({
-  declarations: [AppComponent],
-  imports: [BrowserModule, HttpClientModule],
+  declarations: [
+    AppComponent,
+    SummaryComponent
+  ],
+  imports: [
+    BrowserModule,
+    HttpClientModule
+  ],
   providers: [StocksService],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }
