@@ -1,7 +1,7 @@
-/* tslint:disable component-selector */
 import { Component, Input } from '@angular/core';
 
 @Component({
+  /* tslint:disable component-selector */
   selector: 'summary',
   templateUrl: './summary.component.html',
   styleUrls: ['./summary.component.css']
